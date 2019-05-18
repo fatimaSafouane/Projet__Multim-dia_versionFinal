@@ -30,3 +30,6 @@ Dans cette version, nous permettrons aux utilisateur de recadrer et de pivoter l
 
 
 
+
+
+![image](https://user-images.githubusercontent.com/46228917/57968554-a0e72b00-795b-11e9-9da7-bf9cc349bc19.png)
