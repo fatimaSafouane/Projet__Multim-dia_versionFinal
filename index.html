@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>App</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<div id="interface1">
+				<div class="i" >
+			<h1 >take your photos</h1>
+		<button class="buton5" id="btni1" onclick="displayInterface2()" > click here </button>
+		</div>
+		<div>
+		<div id="centerdiv">
+				<span id='vid'>Video</span>
+									<span id='imgs'>Image</span>	
+			<video id="camera"  width="200" height="224" autoplay>
+			</video>
+			<span id="countdown"></span><br />
+			<div id='container'>
+
+				<canvas id="resultat" width="200" height="224"  >
+			</canvas>
+			<div id='cadre'>
+			<div class="corner tl"></div>
+			<div class="corner tr"></div>
+			<div class="corner bl"></div>
+			<div class="corner br"></div>
+			
+			<div class="corner tc"></div>
+			<div class="corner bc"></div>
+			<div class="corner lc"></div>
+			<div class="corner rc"></div>
+			</div></div>
+			
+				<div id="opvid">
+						<br /><br />
+										  <button class="but" onclick='capture()'>Capturer</button><br /><br />
+										  
+										  
+										  <button  class="but"  onclick=' downloadImageBase64()'>Enregistrer</button>
+
+				</div>
+				<div id="opimg">
+									
+									<br /><br />
+
+									  	<button  class="but" onclick="showCarre(true)">display</button><br /><br />
+
+									  	<button  class="but" onclick='recadrage()'>Recadrage</button>
+										<br />
+
+					<div id="op">	<h2 > **Les filters</h2>
+					<table  style="margin:auto;">
+						
+						<tr>
+							<td >Brightness</td>
+							<td ><input id="fbrightness" type="number" min="0" max="200" step="1" value="100" onchange="filtercanvas(this.id,this.value)" /></td>
+						</tr>
+						<tr>
+						<td >Contrast</td>
+							<td ><input id="fcontrast" type="number" min="0" max="200" step="1" " value="100" onchange="filtercanvas(this.id,this.value)" /></td>
+						</tr>
+						 <tr>
+							<td>Saturate</td>
+							<td><input id="fsaturate" type="number" min="0" max="200" step="1" " value="100" onchange="filtercanvas(this.id,this.value)" /></td>
+						</tr> 
+				
+					</table>
+				</div>
+					
+				</div>
+				</div>
+
+		<script src="js/script.js" ></script>
+	</body>
+</html>
